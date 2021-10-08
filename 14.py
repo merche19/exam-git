@@ -28,6 +28,20 @@ def sum_at_once(x, base):
 
 print(sum_at_once(101, 7))
 
-
 # sum_at_once СРАЗУ суммирует цифры числа, получившегося при
 # переводе из десятичного числа в другую систему счисления
+
+
+def sum_digits(integer):
+
+    num = int(integer)
+    sum = 0
+    while (num != 0):
+        sum = sum + num % 10
+        num = num // 10
+    return sum
+
+
+print("The sum of the digits is: ", sum_digits(38904))
+
+# sum_digits просто суммирует цифры целого десятичного числа
