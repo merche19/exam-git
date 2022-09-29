@@ -1,9 +1,6 @@
 def count_factorial(number):  # calcular el factorial de un número
 
-    if number <= 0:
-        return 'not defined'
-
-    elif str(number).isnumeric():
+    if str(number).isnumeric():
 
         i = number
         result = 1
